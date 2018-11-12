@@ -155,6 +155,10 @@ class BackgroundExt {
                 Intent.FLAG_ACTIVITY_REORDER_TO_FRONT |
                 Intent.FLAG_ACTIVITY_SINGLE_TOP);
 
+        // GZ Modifications
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        // End of GZ Modifications
+
         app.startActivity(intent);
     }
 
